@@ -6,63 +6,50 @@
 .head{
     text-align: center;
 }
+
 .row{
     display: flex;
 }
-section{
+.section{
     background-color: burlywood;
-    margin: 29px;
     box-sizing: border-box;
     border: 2px solid black;
-    display: inline-block;
-    width: 388px;
-    height: 143px;
+    text-align: left;
+    margin: 14px;
 }
-
-section h1{
-    text-align: center;
-    border: 2px solid black;
-    box-sizing: border-box;
-    margin-left: 271px;
-    background-color:#f74c31;
+.section h1{
+        box-sizing: border-box;
+        border: 2px solid black;
+        text-align: center;
+        float: right;
+        width: 145px;
+        background-color: brown;
+    }
+.section p{
+    padding: 9px;
+}    
+#beef h1{
+      background-color:aqua;
 }
-
-section p{
-    box-sizing: border-box;
-    width: 364px;
-    padding: 7px;
+#sushi h1{
+    background-color: gold;
 }
-
 @media(max-width:767px) {
     .row{
         flex-direction: column;
     }
-    section{
-        width: 271px;
-        margin: 30px;
-        height: 204px;
-    }
-    section p{
-       width: 249px;
-       height: 200px;
-    }
-    section h1{
-        margin-left: 149px;
+    .section h1{
+        width: 115px;
     }
  }
-
- @media((min-width:768px) and (max-width:991px)) {
-    .row{
-        column-gap: unset;
-    }
-    section{
-        
-    }
-    section p{
-       width: 249px;
-       height: 200px;
-    }
-    section h1{
-        margin-left: 149px;
-    }
+ @media(min-width:768px) and (max-width:991px) {
+   .col-md-12{
+       width: 100%;
+   }
+   .col-md-6{
+       width: 50%;
+   }
+   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
  }
